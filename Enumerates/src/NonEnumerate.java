@@ -16,8 +16,8 @@ public class NonEnumerate {
   }
 
   public void start() {
-    Person instructor = new Person("Phil", "teacher");
-    Person student = new Person("Joe", "manager");
+    Person instructor = new Person("Phil", Person.Role.TEACHER);
+    Person student = new Person("Joe", Person.Role.STUDENT);
     System.out.println(instructor.toString());
     System.out.println(student.toString());
   }
